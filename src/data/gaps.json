@@ -1,0 +1,46 @@
+{
+  "gaps": [
+    {
+      "themeId": "bilgisayarli-muzik",
+      "gapScore": 0.87,
+      "label": "Bilgisayarlı Müzik — Düşük Kapsam",
+      "description": "Bu alan son 5 yılda yalnızca 12 tez içermekte; makam sisteminin bilgisayarlı modellemesi ve derin öğrenme uygulamaları özellikle eksik kalmaktadır.",
+      "undercoveredAspects": ["makam modellemesi", "otomatik transkripsiyon", "derin öğrenme uygulamaları", "ses tanıma sistemleri"]
+    },
+    {
+      "themeId": "muzik-terapi",
+      "gapScore": 0.79,
+      "label": "Müzik Terapi — Gelişmekte Olan Alan",
+      "description": "Türk makamlarının terapötik etkilerini inceleyen çalışmalar oldukça sınırlıdır; klinik protokoller ve etkinlik ölçümü büyük ölçüde eksik.",
+      "undercoveredAspects": ["makam–duygu ilişkisi", "klinik protokoller", "çocuk terapisi", "nörobilimsel boyut"]
+    },
+    {
+      "themeId": "kompozisyon",
+      "gapScore": 0.71,
+      "label": "Çağdaş Kompozisyon — Eksik Araştırma",
+      "description": "Çağdaş Türk bestecilerinin analizi ve geleneksel unsurların modern kompozisyona entegrasyonu sınırlı sayıda teze konu olmuştur.",
+      "undercoveredAspects": ["çağdaş besteciler", "yeni kompozisyon teknikleri", "Batı-Doğu sentezi", "elektronik müzik"]
+    },
+    {
+      "themeId": "muzik-teorisi",
+      "gapScore": 0.65,
+      "label": "Müzik Nazariyatı — Teorik Boşluklar",
+      "description": "Türk makam sisteminin Batı armoni teorisi ile karşılaştırmalı analizi ve mikrotonal yapıların sistematik çalışması yetersiz kalmaktadır.",
+      "undercoveredAspects": ["karşılaştırmalı nazariyat", "mikrotonal analiz", "sistemleştirme", "matematiksel modelleme"]
+    },
+    {
+      "themeId": "makam-analizi",
+      "gapScore": 0.41,
+      "label": "Makam Analizi — Doymuş Alan",
+      "description": "Bu alan yoğun araştırma görmüş olup özgün katkı için niş bir odak gereklidir; bölgesel varyasyonlar ve tarihsel değişim süreçleri görece az çalışılmıştır.",
+      "undercoveredAspects": ["bölgesel makam varyasyonları", "tarihsel seyir değişimi", "icracı yorumları arası farklılıklar"]
+    },
+    {
+      "themeId": "muzik-egitimi",
+      "gapScore": 0.38,
+      "label": "Müzik Eğitimi — Yüksek Araştırma Yoğunluğu",
+      "description": "En çok çalışılan alan olup özgün katkı için spesifik pedagojik odak şarttır; uzaktan eğitim ve teknoloji entegrasyonu görece az araştırılmıştır.",
+      "undercoveredAspects": ["uzaktan eğitim", "özel eğitim ihtiyacı olan öğrenciler", "teknoloji destekli öğretim", "öz-düzenlemeli öğrenme"]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "methods": [
+    {
+      "id": "dokuman-incelemesi",
+      "label": "Doküman İncelemesi",
+      "keywords": ["doküman", "belge", "metin", "kaynak", "arşiv", "yazılı", "inceleme", "literatür", "kayıt", "el yazması", "katalog", "nota"],
+      "compatibleThemes": ["tarihi-muzik", "muzik-teorisi", "kompozisyon", "geleneksel-calgilar", "halk-muzigi"],
+      "incompatibleThemes": ["muzik-terapi", "bilgisayarli-muzik"],
+      "description": "Yazılı kaynaklar, arşiv belgeleri ve literatür üzerinde sistematik inceleme"
+    },
+    {
+      "id": "betimsel-analiz",
+      "label": "Betimsel Analiz",
+      "keywords": ["betimsel", "betimleme", "tanımlayıcı", "tarama", "durum", "profil", "içerik", "gözlem", "mülakat", "görüşme", "saha", "nitel"],
+      "compatibleThemes": ["muzik-egitimi", "halk-muzigi", "icra-pratikleri", "etnomüzikoloji", "makam-analizi"],
+      "incompatibleThemes": ["bilgisayarli-muzik"],
+      "description": "Olguların ve süreçlerin sistematik biçimde betimlenmesi ve sınıflandırılması"
+    },
+    {
+      "id": "analitik-inceleme",
+      "label": "Analitik İnceleme",
+      "keywords": ["analitik", "analiz", "çözümleme", "yapısal", "nota analizi", "melodik", "armonik", "karşılaştırmalı", "biçim", "form", "usul", "makam"],
+      "compatibleThemes": ["makam-analizi", "usul-ritim", "muzik-teorisi", "kompozisyon", "geleneksel-calgilar", "icra-pratikleri"],
+      "incompatibleThemes": ["muzik-terapi"],
+      "description": "Müzikal yapıların, formların ve unsurların sistematik çözümlenmesi"
+    },
+    {
+      "id": "tarihsel-arastirma",
+      "label": "Tarihsel Araştırma",
+      "keywords": ["tarihsel", "tarih", "tarihi", "osmanlı", "dönem", "kronoloji", "köken", "gelişim", "tarihçe", "süreç", "arşiv", "divan"],
+      "compatibleThemes": ["tarihi-muzik", "geleneksel-calgilar", "halk-muzigi", "kompozisyon", "muzik-teorisi"],
+      "incompatibleThemes": ["muzik-terapi", "bilgisayarli-muzik"],
+      "description": "Tarihsel süreç ve gelişmelerin birincil/ikincil kaynaklarla incelenmesi"
+    },
+    {
+      "id": "karma-yontem",
+      "label": "Karma Yöntem",
+      "keywords": ["karma", "karma yöntem", "çoklu yöntem", "anket", "nicel", "istatistik", "ölçek", "deneysel", "test", "uygulama"],
+      "compatibleThemes": ["muzik-egitimi", "etnomüzikoloji", "halk-muzigi", "icra-pratikleri", "muzik-terapi"],
+      "incompatibleThemes": [],
+      "description": "Nicel ve/veya nitel yöntemlerin araştırma amacına göre bir arada kullanılması"
+    }
+  ]
+}

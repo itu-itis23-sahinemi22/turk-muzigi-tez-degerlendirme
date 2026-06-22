@@ -1,0 +1,124 @@
+{
+  "themes": [
+    {
+      "id": "makam-analizi",
+      "label": "Makam Analizi",
+      "keywords": ["makam", "perde", "seyir", "aralık", "çeşni", "rast", "hicaz", "uşşak", "segah", "kürdi", "sabah", "nihavend", "acemaşiran", "hüseyni", "beyati"],
+      "codes": ["MA-01", "MA-02", "MA-03"],
+      "thesisCount": 47,
+      "yearRange": [2005, 2023],
+      "dominantMethods": ["analitik-inceleme", "betimsel-analiz"],
+      "description": "Türk müziği makam sisteminin teorik ve uygulamalı analizi"
+    },
+    {
+      "id": "usul-ritim",
+      "label": "Usul ve Ritim Yapıları",
+      "keywords": ["usul", "ritim", "darb", "vuruş", "düyek", "sofyan", "aksak", "devr-i hindi", "nim sofyan", "curcuna", "yürük semai", "ağır aksak"],
+      "codes": ["UR-01", "UR-02"],
+      "thesisCount": 31,
+      "yearRange": [2008, 2023],
+      "dominantMethods": ["analitik-inceleme"],
+      "description": "Türk müziğinde usul ve ritim kalıplarının incelenmesi"
+    },
+    {
+      "id": "geleneksel-calgilar",
+      "label": "Geleneksel Çalgılar",
+      "keywords": ["ud", "ney", "kanun", "tanbur", "kemençe", "bağlama", "saz", "çalgı", "enstrüman", "icra", "rebab", "kopuz", "lavta", "mey", "zurna", "davul"],
+      "codes": ["GC-01", "GC-02", "GC-03"],
+      "thesisCount": 58,
+      "yearRange": [2003, 2023],
+      "dominantMethods": ["betimsel-analiz", "analitik-inceleme", "dokuman-incelemesi"],
+      "description": "Türk müziği geleneksel çalgılarının tarihsel ve icra pratikleri"
+    },
+    {
+      "id": "muzik-egitimi",
+      "label": "Müzik Eğitimi",
+      "keywords": ["eğitim", "öğretim", "müfredat", "öğrenci", "öğretmen", "ders", "konservatuvar", "okul", "pedagoji", "yöntem", "akademi", "sınıf", "program"],
+      "codes": ["ME-01", "ME-02", "ME-03", "ME-04"],
+      "thesisCount": 72,
+      "yearRange": [2000, 2023],
+      "dominantMethods": ["betimsel-analiz", "karma-yontem"],
+      "description": "Türk müziği eğitimi, pedagojik yaklaşımlar ve müfredat geliştirme"
+    },
+    {
+      "id": "tarihi-muzik",
+      "label": "Tarihî Türk Müziği",
+      "keywords": ["osmanlı", "tarih", "tarihî", "antik", "divan", "klasik", "arşiv", "el yazması", "nota", "mevlevi", "tekke", "tarikat", "hamparsum", "ayin"],
+      "codes": ["TM-01", "TM-02"],
+      "thesisCount": 29,
+      "yearRange": [2004, 2022],
+      "dominantMethods": ["dokuman-incelemesi", "tarihsel-arastirma"],
+      "description": "Osmanlı ve erken dönem Türk müziği tarihi araştırmaları"
+    },
+    {
+      "id": "halk-muzigi",
+      "label": "Türk Halk Müziği",
+      "keywords": ["halk", "türkü", "yöre", "âşık", "ozanlık", "derleme", "köy", "folklor", "ezgi", "bozlak", "koşma", "mani", "semai", "destan"],
+      "codes": ["HM-01", "HM-02", "HM-03"],
+      "thesisCount": 64,
+      "yearRange": [2001, 2023],
+      "dominantMethods": ["betimsel-analiz", "tarihsel-arastirma", "dokuman-incelemesi"],
+      "description": "Anadolu halk müziği gelenekleri, türkü ve âşıklık"
+    },
+    {
+      "id": "muzik-teorisi",
+      "label": "Müzik Teorisi ve Nazariyat",
+      "keywords": ["nazariyat", "teori", "aralık", "diziler", "armoni", "kontrpuan", "ses", "akustik", "frekans", "oktav", "transpoze", "modal"],
+      "codes": ["MT-01", "MT-02"],
+      "thesisCount": 22,
+      "yearRange": [2006, 2023],
+      "dominantMethods": ["analitik-inceleme", "dokuman-incelemesi"],
+      "description": "Türk müziği teori ve nazariyat çalışmaları"
+    },
+    {
+      "id": "muzik-terapi",
+      "label": "Müzik Terapi",
+      "keywords": ["terapi", "tedavi", "sağlık", "klinik", "hasta", "psikoloji", "rehabilitasyon", "müzikterapi", "terapötik", "duygu", "anksiyete", "stres"],
+      "codes": ["MTR-01", "MTR-02"],
+      "thesisCount": 18,
+      "yearRange": [2010, 2023],
+      "dominantMethods": ["betimsel-analiz", "karma-yontem"],
+      "description": "Türk müziğinin terapötik uygulamaları"
+    },
+    {
+      "id": "kompozisyon",
+      "label": "Kompozisyon ve Yaratıcılık",
+      "keywords": ["beste", "besteci", "kompozisyon", "eser", "yaratıcılık", "özgün", "yeni", "çağdaş", "ürün", "form", "kontrapunto", "polifoni"],
+      "codes": ["KM-01", "KM-02"],
+      "thesisCount": 15,
+      "yearRange": [2009, 2023],
+      "dominantMethods": ["analitik-inceleme", "dokuman-incelemesi"],
+      "description": "Türk müziği bestecileri ve kompozisyon pratikleri"
+    },
+    {
+      "id": "etnomüzikoloji",
+      "label": "Etnomüzikoloji",
+      "keywords": ["etnomüzikoloji", "kültür", "kimlik", "toplum", "ritüel", "tören", "gelenek", "antropoloji", "sözlü", "miras", "alan", "bölge", "topluluk"],
+      "codes": ["EM-01", "EM-02"],
+      "thesisCount": 26,
+      "yearRange": [2007, 2023],
+      "dominantMethods": ["betimsel-analiz", "karma-yontem"],
+      "description": "Türk müziğinin kültürel ve toplumsal boyutları"
+    },
+    {
+      "id": "bilgisayarli-muzik",
+      "label": "Bilgisayarlı Müzik ve Teknoloji",
+      "keywords": ["bilgisayar", "teknoloji", "yazılım", "dijital", "midi", "dsp", "ses işleme", "yapay zeka", "algoritma", "sinyal", "frekans analizi", "makine öğrenmesi"],
+      "codes": ["BM-01", "BM-02"],
+      "thesisCount": 12,
+      "yearRange": [2015, 2023],
+      "dominantMethods": ["analitik-inceleme", "betimsel-analiz"],
+      "description": "Bilgisayar teknolojisi ile Türk müziği araştırmaları"
+    },
+    {
+      "id": "icra-pratikleri",
+      "label": "İcra Pratikleri ve Performans",
+      "keywords": ["icra", "performans", "yorumlama", "sanatçı", "sahne", "konser", "teknik", "stil", "üslup", "virtüöz", "taksim", "doğaçlama"],
+      "codes": ["IP-01", "IP-02"],
+      "thesisCount": 34,
+      "yearRange": [2005, 2023],
+      "dominantMethods": ["betimsel-analiz", "analitik-inceleme"],
+      "description": "Türk müziğinde icra ve performans pratiklerinin incelenmesi"
+    }
+  ]
+}

@@ -2,26 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-slate-900 text-slate-100;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .step-card {
+    @apply bg-slate-800 border border-slate-700 rounded-xl shadow-sm p-6;
+  }
+  .score-bar-track {
+    @apply w-full bg-slate-700 rounded-full h-2 overflow-hidden;
+  }
+  .score-bar-fill {
+    @apply h-2 rounded-full transition-all duration-700 ease-out;
+  }
+  .keyword-chip {
+    @apply inline-flex items-center px-2 py-0.5 rounded-md bg-indigo-900/40 text-indigo-300 text-xs font-medium border border-indigo-700;
   }
 }
