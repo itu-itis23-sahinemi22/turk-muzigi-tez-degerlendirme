@@ -38,7 +38,6 @@ export function partialMatchScore(inputTokens: string[], keywords: string[]): {
   for (const kw of keywords) {
     const kwTokens = tokenize(kw);
     const kwStr = kw.toLowerCase();
-    const inputStr = inputTokens.join(' ');
 
     const directHit = inputTokens.some(t => t === kwStr || kwStr.includes(t) || t.includes(kwStr));
     const tokenHit = kwTokens.some(kt => inputTokens.includes(kt));
