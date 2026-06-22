@@ -7,9 +7,7 @@ export function analyzeThematicSimilarity(input: ProposalInput): ThematicSimilar
     input.title,
     input.problemStatement,
     input.researchPurpose,
-    input.researchQuestions,
     input.proposedMethod,
-    input.keywords,
   ].join(' ');
 
   const inputTokens = tokenize(allText);

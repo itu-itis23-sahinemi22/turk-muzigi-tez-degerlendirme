@@ -2,9 +2,7 @@ export interface ProposalInput {
   title: string;
   problemStatement: string;
   researchPurpose: string;
-  researchQuestions: string;
   proposedMethod: string;
-  keywords: string;
 }
 
 export interface ThemeMatch {
@@ -40,11 +38,18 @@ export interface GapMatch {
   weightedScore: number;
 }
 
+export interface YearlyDataPoint {
+  year: number;
+  count: number;
+}
+
 export interface ResearchGapResult {
   addressedGaps: GapMatch[];
   gapCoverageScore: number;
   noveltyLevel: 'yüksek' | 'orta' | 'düşük';
   interpretation: string;
+  yearlyData: YearlyDataPoint[];
+  topThemeLabel: string;
 }
 
 export interface PreReviewReport {

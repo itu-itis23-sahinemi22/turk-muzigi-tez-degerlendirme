@@ -8,7 +8,8 @@
       "thesisCount": 47,
       "yearRange": [2005, 2023],
       "dominantMethods": ["analitik-inceleme", "betimsel-analiz"],
-      "description": "Türk müziği makam sisteminin teorik ve uygulamalı analizi"
+      "description": "Türk müziği makam sisteminin teorik ve uygulamalı analizi",
+      "yearlyDistribution": {"2005":2,"2006":2,"2007":3,"2008":3,"2009":2,"2010":3,"2011":2,"2012":3,"2013":4,"2014":3,"2015":2,"2016":2,"2017":3,"2018":3,"2019":2,"2020":2,"2021":1,"2022":2,"2023":3}
     },
     {
       "id": "usul-ritim",
@@ -18,7 +19,8 @@
       "thesisCount": 31,
       "yearRange": [2008, 2023],
       "dominantMethods": ["analitik-inceleme"],
-      "description": "Türk müziğinde usul ve ritim kalıplarının incelenmesi"
+      "description": "Türk müziğinde usul ve ritim kalıplarının incelenmesi",
+      "yearlyDistribution": {"2008":2,"2009":2,"2010":3,"2011":2,"2012":2,"2013":3,"2014":2,"2015":1,"2016":1,"2017":2,"2018":2,"2019":2,"2020":1,"2021":2,"2022":2,"2023":2}
     },
     {
       "id": "geleneksel-calgilar",
@@ -28,7 +30,8 @@
       "thesisCount": 58,
       "yearRange": [2003, 2023],
       "dominantMethods": ["betimsel-analiz", "analitik-inceleme", "dokuman-incelemesi"],
-      "description": "Türk müziği geleneksel çalgılarının tarihsel ve icra pratikleri"
+      "description": "Türk müziği geleneksel çalgılarının tarihsel ve icra pratikleri",
+      "yearlyDistribution": {"2003":2,"2004":3,"2005":3,"2006":4,"2007":3,"2008":3,"2009":3,"2010":4,"2011":3,"2012":3,"2013":4,"2014":2,"2015":2,"2016":2,"2017":3,"2018":3,"2019":2,"2020":2,"2021":2,"2022":2,"2023":3}
     },
     {
       "id": "muzik-egitimi",
@@ -38,7 +41,8 @@
       "thesisCount": 72,
       "yearRange": [2000, 2023],
       "dominantMethods": ["betimsel-analiz", "karma-yontem"],
-      "description": "Türk müziği eğitimi, pedagojik yaklaşımlar ve müfredat geliştirme"
+      "description": "Türk müziği eğitimi, pedagojik yaklaşımlar ve müfredat geliştirme",
+      "yearlyDistribution": {"2000":2,"2001":3,"2002":3,"2003":3,"2004":4,"2005":3,"2006":4,"2007":3,"2008":3,"2009":4,"2010":4,"2011":3,"2012":4,"2013":4,"2014":3,"2015":2,"2016":2,"2017":3,"2018":3,"2019":3,"2020":2,"2021":2,"2022":2,"2023":3}
     },
     {
       "id": "tarihi-muzik",
@@ -48,7 +52,8 @@
       "thesisCount": 29,
       "yearRange": [2004, 2022],
       "dominantMethods": ["dokuman-incelemesi", "tarihsel-arastirma"],
-      "description": "Osmanlı ve erken dönem Türk müziği tarihi araştırmaları"
+      "description": "Osmanlı ve erken dönem Türk müziği tarihi araştırmaları",
+      "yearlyDistribution": {"2004":1,"2005":2,"2006":2,"2007":1,"2008":2,"2009":1,"2010":2,"2011":2,"2012":2,"2013":2,"2014":1,"2015":1,"2016":1,"2017":2,"2018":2,"2019":2,"2020":1,"2021":1,"2022":1}
     },
     {
       "id": "halk-muzigi",
@@ -58,7 +63,8 @@
       "thesisCount": 64,
       "yearRange": [2001, 2023],
       "dominantMethods": ["betimsel-analiz", "tarihsel-arastirma", "dokuman-incelemesi"],
-      "description": "Anadolu halk müziği gelenekleri, türkü ve âşıklık"
+      "description": "Anadolu halk müziği gelenekleri, türkü ve âşıklık",
+      "yearlyDistribution": {"2001":2,"2002":3,"2003":3,"2004":3,"2005":3,"2006":4,"2007":3,"2008":3,"2009":3,"2010":4,"2011":3,"2012":4,"2013":3,"2014":3,"2015":2,"2016":2,"2017":2,"2018":3,"2019":2,"2020":2,"2021":2,"2022":2,"2023":3}
     },
     {
       "id": "muzik-teorisi",
@@ -68,7 +74,8 @@
       "thesisCount": 22,
       "yearRange": [2006, 2023],
       "dominantMethods": ["analitik-inceleme", "dokuman-incelemesi"],
-      "description": "Türk müziği teori ve nazariyat çalışmaları"
+      "description": "Türk müziği teori ve nazariyat çalışmaları",
+      "yearlyDistribution": {"2006":1,"2007":1,"2008":1,"2009":1,"2010":1,"2011":2,"2012":2,"2013":2,"2014":1,"2015":1,"2016":1,"2017":1,"2018":1,"2019":2,"2020":1,"2021":1,"2022":1,"2023":1}
     },
     {
       "id": "muzik-terapi",
@@ -78,7 +85,8 @@
       "thesisCount": 18,
       "yearRange": [2010, 2023],
       "dominantMethods": ["betimsel-analiz", "karma-yontem"],
-      "description": "Türk müziğinin terapötik uygulamaları"
+      "description": "Türk müziğinin terapötik uygulamaları",
+      "yearlyDistribution": {"2010":1,"2011":1,"2012":2,"2013":2,"2014":1,"2015":1,"2016":1,"2017":2,"2018":2,"2019":1,"2020":1,"2021":1,"2022":1,"2023":1}
     },
     {
       "id": "kompozisyon",
@@ -88,7 +96,8 @@
       "thesisCount": 15,
       "yearRange": [2009, 2023],
       "dominantMethods": ["analitik-inceleme", "dokuman-incelemesi"],
-      "description": "Türk müziği bestecileri ve kompozisyon pratikleri"
+      "description": "Türk müziği bestecileri ve kompozisyon pratikleri",
+      "yearlyDistribution": {"2009":1,"2010":1,"2011":1,"2012":2,"2013":2,"2014":1,"2015":1,"2017":1,"2018":1,"2019":1,"2020":1,"2021":1,"2022":1,"2023":1}
     },
     {
       "id": "etnomüzikoloji",
@@ -98,7 +107,8 @@
       "thesisCount": 26,
       "yearRange": [2007, 2023],
       "dominantMethods": ["betimsel-analiz", "karma-yontem"],
-      "description": "Türk müziğinin kültürel ve toplumsal boyutları"
+      "description": "Türk müziğinin kültürel ve toplumsal boyutları",
+      "yearlyDistribution": {"2007":1,"2008":1,"2009":2,"2010":2,"2011":1,"2012":2,"2013":2,"2014":2,"2015":1,"2016":1,"2017":2,"2018":2,"2019":1,"2020":1,"2021":2,"2022":2,"2023":1}
     },
     {
       "id": "bilgisayarli-muzik",
@@ -108,7 +118,8 @@
       "thesisCount": 12,
       "yearRange": [2015, 2023],
       "dominantMethods": ["analitik-inceleme", "betimsel-analiz"],
-      "description": "Bilgisayar teknolojisi ile Türk müziği araştırmaları"
+      "description": "Bilgisayar teknolojisi ile Türk müziği araştırmaları",
+      "yearlyDistribution": {"2015":1,"2016":1,"2017":1,"2018":2,"2019":2,"2020":1,"2021":1,"2022":2,"2023":1}
     },
     {
       "id": "icra-pratikleri",
@@ -118,7 +129,8 @@
       "thesisCount": 34,
       "yearRange": [2005, 2023],
       "dominantMethods": ["betimsel-analiz", "analitik-inceleme"],
-      "description": "Türk müziğinde icra ve performans pratiklerinin incelenmesi"
+      "description": "Türk müziğinde icra ve performans pratiklerinin incelenmesi",
+      "yearlyDistribution": {"2005":2,"2006":2,"2007":2,"2008":2,"2009":2,"2010":2,"2011":2,"2012":2,"2013":2,"2014":2,"2015":2,"2016":2,"2017":2,"2018":2,"2019":2,"2020":1,"2021":1,"2022":1,"2023":1}
     }
   ]
 }

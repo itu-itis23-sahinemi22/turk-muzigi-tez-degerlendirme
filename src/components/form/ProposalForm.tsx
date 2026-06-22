@@ -13,9 +13,7 @@ const EMPTY: ProposalInput = {
   title: '',
   problemStatement: '',
   researchPurpose: '',
-  researchQuestions: '',
   proposedMethod: '',
-  keywords: '',
 };
 
 type Errors = Partial<Record<keyof ProposalInput, string>>;
@@ -33,15 +31,11 @@ export default function ProposalForm({ onSubmit, isLoading }: ProposalFormProps)
 
   function validate(): boolean {
     const newErrors: Errors = {};
-    const fields: { key: keyof ProposalInput; label: string; min: number }[] = [
-      { key: 'title', label: 'Başlık', min: 5 },
-      { key: 'problemStatement', label: 'Problem durumu', min: 20 },
-      { key: 'researchPurpose', label: 'Araştırma amacı', min: 10 },
-      { key: 'researchQuestions', label: 'Araştırma soruları', min: 10 },
+    const required: { key: keyof ProposalInput; label: string; min: number }[] = [
+      { key: 'title', label: 'Araştırmanın konusu', min: 5 },
       { key: 'proposedMethod', label: 'Yöntem', min: 5 },
-      { key: 'keywords', label: 'Anahtar kelimeler', min: 3 },
     ];
-    for (const { key, label, min } of fields) {
+    for (const { key, label, min } of required) {
       if (!form[key] || form[key].trim().length < min) {
         newErrors[key] = `${label} en az ${min} karakter olmalıdır.`;
       }
@@ -59,11 +53,11 @@ export default function ProposalForm({ onSubmit, isLoading }: ProposalFormProps)
     <form onSubmit={handleSubmit} className="bg-slate-800 border border-slate-700 rounded-xl shadow-sm p-6 space-y-5">
       <div>
         <h2 className="text-base font-semibold text-slate-100">Araştırma Önerisi</h2>
-        <p className="text-sm text-slate-400 mt-0.5">Tüm alanları doldurun. Sistem önerinizi 4 boyutta değerlendirecektir.</p>
+        <p className="text-sm text-slate-400 mt-0.5">Konu ve yöntem alanları zorunludur. Diğer alanlar değerlendirme kalitesini artırır.</p>
       </div>
 
       <FormField
-        label="Araştırma Başlığı"
+        label="Araştırmanın Konusu"
         name="title"
         type="input"
         value={form.title}
@@ -78,32 +72,20 @@ export default function ProposalForm({ onSubmit, isLoading }: ProposalFormProps)
         value={form.problemStatement}
         onChange={set('problemStatement')}
         placeholder="Araştırmanın çözmeye çalıştığı problemi ve bu problemi ortaya çıkaran durumu açıklayın..."
-        required
         error={errors.problemStatement}
         rows={4}
       />
       <FormField
-        label="Araştırma Amacı"
+        label="Amacı"
         name="researchPurpose"
         value={form.researchPurpose}
         onChange={set('researchPurpose')}
         placeholder="Bu araştırmanın genel ve özel amaçlarını belirtin..."
-        required
         error={errors.researchPurpose}
         rows={3}
       />
       <FormField
-        label="Araştırma Soruları"
-        name="researchQuestions"
-        value={form.researchQuestions}
-        onChange={set('researchQuestions')}
-        placeholder="Araştırmanın yanıtlamayı hedeflediği soruları listeleyin..."
-        required
-        error={errors.researchQuestions}
-        rows={3}
-      />
-      <FormField
-        label="Önerilen Araştırma Yöntemi"
+        label="Yöntem"
         name="proposedMethod"
         value={form.proposedMethod}
         onChange={set('proposedMethod')}
@@ -111,16 +93,6 @@ export default function ProposalForm({ onSubmit, isLoading }: ProposalFormProps)
         required
         error={errors.proposedMethod}
         rows={3}
-      />
-      <FormField
-        label="Anahtar Kelimeler"
-        name="keywords"
-        type="input"
-        value={form.keywords}
-        onChange={set('keywords')}
-        placeholder="Örn: makam, rast, müzik eğitimi, analitik inceleme"
-        required
-        error={errors.keywords}
       />
 
       <div className="flex items-center gap-4 pt-2">

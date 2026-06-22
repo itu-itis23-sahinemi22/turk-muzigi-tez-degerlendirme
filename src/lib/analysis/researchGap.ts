@@ -1,5 +1,6 @@
-import { ResearchGapResult, ThemeMatch, GapMatch } from '@/lib/types';
+import { ResearchGapResult, ThemeMatch, GapMatch, YearlyDataPoint } from '@/lib/types';
 import gapsData from '@/data/gaps.json';
+import thesesData from '@/data/theses.json';
 
 export function analyzeResearchGap(topMatches: ThemeMatch[]): ResearchGapResult {
   const weightedGaps: GapMatch[] = [];
@@ -42,10 +43,25 @@ export function analyzeResearchGap(topMatches: ThemeMatch[]): ResearchGapResult 
     interpretation = `Öneriniz ağırlıklı olarak yoğun biçimde çalışılmış temalara girmektedir. Mevcut literatürden nasıl farklılaştığının ve hangi boşluğu doldurduğunun açıkça ifade edilmesi kritik önem taşımaktadır.`;
   }
 
+  const topThemeLabel = topMatches[0]?.label ?? '';
+
+  const yearlyData: YearlyDataPoint[] = [];
+  for (let yr = 2000; yr <= 2023; yr++) {
+    let count = 0;
+    for (const match of topMatches.slice(0, 3)) {
+      const theme = thesesData.themes.find(t => t.id === match.themeId);
+      const dist = (theme?.yearlyDistribution ?? {}) as Record<string, number>;
+      count += dist[String(yr)] ?? 0;
+    }
+    yearlyData.push({ year: yr, count });
+  }
+
   return {
     addressedGaps: weightedGaps,
     gapCoverageScore,
     noveltyLevel,
     interpretation,
+    yearlyData,
+    topThemeLabel,
   };
 }

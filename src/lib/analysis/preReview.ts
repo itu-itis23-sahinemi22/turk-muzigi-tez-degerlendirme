@@ -40,9 +40,6 @@ export function generatePreReview(
   if (titleWords >= 7) {
     strengths.push(`Araştırma başlığı yeterince açıklayıcı ve kapsamlıdır.`);
   }
-  if (input.researchQuestions.includes('?')) {
-    strengths.push(`Araştırma soruları soru biçiminde açıkça ifade edilmiştir.`);
-  }
   if (step1.topMatches[0]?.matchedKeywords.length >= 3) {
     strengths.push(`Anahtar kavramlar literatürle güçlü örtüşme sağlamaktadır.`);
   }
@@ -59,10 +56,7 @@ export function generatePreReview(
   if (step3.noveltyLevel === 'düşük') {
     weaknesses.push(`Araştırma boşluğuna katkı sınırlıdır; çalışmanın mevcut literatürden nasıl farklılaştığı daha net ortaya konulmalıdır.`);
   }
-  if (!input.researchQuestions.includes('?')) {
-    weaknesses.push(`Araştırma soruları soru biçiminde ifade edilmemiştir; bu durum değerlendirmede belirsizliğe yol açmaktadır.`);
-  }
-  if (input.problemStatement.trim().split(/\s+/).length < 20) {
+  if (input.problemStatement.trim().length > 0 && input.problemStatement.trim().split(/\s+/).length < 20) {
     weaknesses.push(`Problem durumu çok kısa tutulmuştur; araştırmanın gerekliliğini ortaya koyan kapsamlı bir gerekçe sunulması beklenmektedir.`);
   }
 
@@ -89,8 +83,8 @@ export function generatePreReview(
 
   const improvementPool: string[] = [
     `Problem durumu bölümü genişletilmeli; araştırmanın pratik ve kuramsal gerekliliği somut verilerle desteklenmelidir.`,
-    `Araştırma sorularının ölçülebilir ve sınanabilir biçimde yeniden düzenlenmesi önerilir.`,
-    `Anahtar kelimeler, ilgili temaların terminolojisiyle (${step1.topMatches.slice(0, 2).map(m => m.matchedKeywords.slice(0, 2).join(', ')).join('; ')}) zenginleştirilmelidir.`,
+    `Araştırma amacı bölümünde çalışmanın özgün katkısı açıkça ortaya konulmalıdır.`,
+    `Araştırmanın ilgili olduğu temalar (${step1.topMatches.slice(0, 2).map(m => m.label).join(', ')}) kapsamında güncel literatür taraması derinleştirilmelidir.`,
     `Araştırmanın sınırlılıkları ve kapsamı başlangıç bölümünde açıkça belirtilmelidir.`,
     `Önerilen yöntemin veri toplama araçları (ölçek, görüşme formu, gözlem protokolü vb.) tanımlanmalıdır.`,
     `Literatür boşluğunu ortaya koyan güncel (son 5 yıl) çalışmalara atıf yapılması önerilir.`,
@@ -99,7 +93,7 @@ export function generatePreReview(
 
   const suggestedImprovements: string[] = [];
   if (input.problemStatement.trim().split(/\s+/).length < 30) suggestedImprovements.push(improvementPool[0]);
-  if (!input.researchQuestions.includes('?')) suggestedImprovements.push(improvementPool[1]);
+  if (!input.researchPurpose || input.researchPurpose.trim().length < 10) suggestedImprovements.push(improvementPool[1]);
   if (step1.overallScore < 0.5) suggestedImprovements.push(improvementPool[2]);
   suggestedImprovements.push(improvementPool[4]);
   if (suggestedImprovements.length < 3) suggestedImprovements.push(improvementPool[5]);

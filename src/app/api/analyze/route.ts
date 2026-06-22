@@ -13,10 +13,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Geçersiz istek formatı.' }, { status: 400 });
   }
 
-  const required: (keyof ProposalInput)[] = [
-    'title', 'problemStatement', 'researchPurpose',
-    'researchQuestions', 'proposedMethod', 'keywords',
-  ];
+  const required: (keyof ProposalInput)[] = ['title', 'proposedMethod'];
 
   for (const field of required) {
     if (!body[field] || body[field].trim().length < 3) {

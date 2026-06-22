@@ -1,6 +1,7 @@
 import StepCard from './StepCard';
 import ScoreBar from '@/components/ui/ScoreBar';
 import Badge from '@/components/ui/Badge';
+import YearlyBarChart from '@/components/ui/YearlyBarChart';
 import { ResearchGapResult } from '@/lib/types';
 
 interface Props {
@@ -17,6 +18,8 @@ export default function Step3ResearchGap({ result, visible }: Props) {
       visible={visible}
     >
       <div className="space-y-4">
+        <YearlyBarChart data={result.yearlyData} themeLabel={result.topThemeLabel} />
+
         <div className="bg-slate-900/60 rounded-lg p-3 border border-slate-700">
           <div className="flex items-center justify-between mb-1.5">
             <span className="text-xs font-medium text-slate-400 uppercase tracking-wide">Boşluk Kapsama Skoru</span>
